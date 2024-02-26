@@ -1,7 +1,7 @@
 local opt = vim.opt --> shorthand for conciseness
 
 -- line numbers
-opt.relativenumber = true 
+opt.relativenumber = true
 opt.number = true
 
 -- tabs & indentation
@@ -10,17 +10,17 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
--- line wrapping 
-opt.wrap = false
+-- line wrapping
+opt.wrap = true
 
--- search settings 
+-- search settings
 opt.ignorecase = true
-opt.smartcase = true 
+opt.smartcase = true
 
--- cursor line 
+-- cursor line
 opt.cursorline = true
 
--- appearance 
+-- appearance
 opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
@@ -35,6 +35,12 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
 
--- dash 
+-- dash
 opt.iskeyword:append("-")
 
+-- templ file type
+vim.filetype.add({
+	extension = {
+		templ = "templ",
+	},
+})

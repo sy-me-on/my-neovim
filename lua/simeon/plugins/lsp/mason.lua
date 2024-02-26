@@ -30,6 +30,7 @@ mason_lspconfig.setup({
 		"sqlls",
 		"marksman", -- md
 		"jsonls", -- json
+		"gopls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed

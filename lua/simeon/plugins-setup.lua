@@ -111,6 +111,9 @@ return packer.startup(function(use)
 
 	use("theprimeagen/vim-be-good")
 
+	use("mfussenegger/nvim-dap")
+	use("leoluz/nvim-dap-go")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

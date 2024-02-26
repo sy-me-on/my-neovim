@@ -46,3 +46,28 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+
+-- nvim-dap-go
+keymap.set("n", "<leader>dus", function()
+	local widgets = require("dap.ui.widgets")
+	local sidebar = widgets.sidebar(widgets.scopes)
+	sidebar.open()
+end)
+keymap.set("n", "<leader>db", function()
+	require("dap").continue()
+end)
+keymap.set("n", "<F5>", function()
+	require("dap").step_over()
+end)
+keymap.set("n", "<F6>", function()
+	require("dap").step_into()
+end)
+keymap.set("n", "<F7>", function()
+	require("dap").step_out()
+end)
+keymap.set("n", "<Leader>b", function()
+	require("dap").toggle_breakpoint()
+end)
+keymap.set("n", "<Leader>dl", function()
+	require("dap").run_last()
+end)
