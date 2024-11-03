@@ -114,6 +114,9 @@ return packer.startup(function(use)
 	use("mfussenegger/nvim-dap")
 	use("leoluz/nvim-dap-go")
 
+	-- astro framework ts
+	use("virchau13/tree-sitter-astro")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

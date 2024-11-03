@@ -226,6 +226,11 @@ _G.packer_plugins = {
     path = "/Users/simedunn/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tree-sitter-astro"] = {
+    loaded = true,
+    path = "/Users/simedunn/.local/share/nvim/site/pack/packer/start/tree-sitter-astro",
+    url = "https://github.com/virchau13/tree-sitter-astro"
+  },
   ["typescript.nvim"] = {
     loaded = true,
     path = "/Users/simedunn/.local/share/nvim/site/pack/packer/start/typescript.nvim",

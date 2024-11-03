@@ -148,4 +148,9 @@ lspconfig["gopls"].setup({
 	},
 })
 
+lspconfig["astro"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 -- server config: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
